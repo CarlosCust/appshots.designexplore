@@ -29,172 +29,143 @@ export const SearchModal = ({ isOpen, onClose }: SearchModalProps) => {
 
   if (!isOpen) return null;
 
-  const handleClearSearch = () => {
-    setSearchQuery("");
+  const platforms = ["iOS", "Android", "Web"] as const;
+
+  const getPlatformGliderStyle = () => {
+    const widths = { iOS: 48, Android: 72, Web: 48 };
+    const offsets = { iOS: 4, Android: 56, Web: 132 };
+    return {
+      width: `${widths[activePlatform]}px`,
+      transform: `translateX(${offsets[activePlatform]}px)`,
+    };
   };
 
   return (
     <div
-      className="fixed inset-0 z-[9999] flex items-start justify-center pt-20 px-4 bg-black/40 backdrop-blur-sm"
+      className="fixed inset-0 z-[9999] flex items-start justify-center pt-16 px-4 bg-black/40 backdrop-blur-sm"
       onClick={onClose}
     >
       <div
-        className="magic-search-container w-full max-w-[1042px] bg-white rounded-[36px] shadow-[0_10px_40px_rgba(0,0,0,0.15)] p-6 relative animate-in fade-in zoom-in-95 duration-300"
+        className="w-full max-w-[960px] bg-white rounded-[28px] shadow-[0_10px_60px_rgba(0,0,0,0.12)] overflow-hidden animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Top Section */}
-        <div className="magic-search-top flex items-start gap-4 mb-6">
-          {/* Logo */}
-          <div className="search-logo-container flex-shrink-0">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="w-8 h-8">
-              <rect width="32" height="32" rx="8" fill="black"/>
-              <path d="M8 22V10l5 6 5-6v12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <circle cx="22" cy="14" r="4" stroke="white" strokeWidth="2"/>
-              <path d="M25 17l2 2" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+        {/* Search Header */}
+        <div className="flex items-center gap-3 px-6 pt-6 pb-4">
+          {/* Logo Icon */}
+          <div className="flex-shrink-0">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="#121212" />
+              <circle cx="13" cy="13" r="2.5" fill="white" />
+              <circle cx="20" cy="13" r="2.5" fill="white" />
+              <circle cx="27" cy="13" r="2.5" fill="white" />
+              <circle cx="13" cy="20" r="2.5" fill="white" />
+              <circle cx="20" cy="20" r="2.5" fill="white" />
+              <circle cx="27" cy="20" r="2.5" fill="white" />
+              <circle cx="13" cy="27" r="2.5" fill="white" />
+              <circle cx="20" cy="27" r="2.5" fill="white" />
+              <circle cx="27" cy="27" r="2.5" fill="white" />
             </svg>
           </div>
 
-          {/* Search Form */}
-          <div className="search-form-wrap flex-1">
-            <div className="search-form">
-              <div className="search-controls-wrap">
-                <div className="search-controls flex flex-col gap-4">
-                  {/* Search Input */}
-                  <div className="search-input-wrap relative">
-                    <input
-                      type="text"
-                      id="search-popup-input"
-                      placeholder=""
-                      className="search-input w-full h-14 px-4 pr-12 text-base rounded-2xl border-2 border-gray-200 focus:border-black focus:outline-none transition-colors"
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      autoFocus
-                    />
-                    {searchQuery && (
-                      <button
-                        className="clear-button absolute right-4 top-1/2 -translate-y-1/2 w-6 h-6 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors"
-                        aria-label="Clear search"
-                        onClick={handleClearSearch}
-                      >
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                          <path
-                            d="M1 1L11 11M1 11L11 1"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                          />
-                        </svg>
-                      </button>
-                    )}
-                    {!searchQuery && (
-                      <div className="placeholder-overlay absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none flex items-center gap-1 text-gray-400">
-                        <span>Try "Onboarding"</span>
-                        <span className="animated-cursor inline-block w-0.5 h-5 bg-black animate-pulse"></span>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Platform Toggle */}
-                  <div className="platform-toggle relative flex items-center gap-2 bg-gray-100 rounded-full p-1 w-fit">
-                    <div
-                      className="glider absolute h-[calc(100%-8px)] bg-black rounded-full transition-all duration-300 ease-out"
-                      style={{
-                        width: "75px",
-                        transform: `translateX(${
-                          activePlatform === "iOS" ? "0px" : activePlatform === "Android" ? "83px" : "166px"
-                        })`,
-                      }}
-                    />
-                    <button
-                      type="button"
-                      className={`platform-button relative z-10 px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                        activePlatform === "iOS" ? "text-white" : "text-gray-700"
-                      }`}
-                      onClick={() => setActivePlatform("iOS")}
-                    >
-                      iOS
-                    </button>
-                    <button
-                      type="button"
-                      className={`platform-button relative z-10 px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                        activePlatform === "Android" ? "text-white" : "text-gray-700"
-                      }`}
-                      onClick={() => setActivePlatform("Android")}
-                    >
-                      Android
-                    </button>
-                    <button
-                      type="button"
-                      className={`platform-button relative z-10 px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                        activePlatform === "Web" ? "text-white" : "text-gray-700"
-                      }`}
-                      onClick={() => setActivePlatform("Web")}
-                    >
-                      Web
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+          {/* Search Icon + Input */}
+          <div className="flex-1 flex items-center gap-2">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#9CA3AF"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="flex-shrink-0"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+            <input
+              type="text"
+              placeholder=""
+              className="w-full text-base text-[#121212] bg-transparent outline-none placeholder:text-zinc-400"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              autoFocus
+            />
           </div>
 
-          {/* Close Button */}
-          <button
-            className="magic-search-close flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full hover:bg-gray-100 transition-colors"
-            aria-label="Close search"
-            onClick={onClose}
-          >
-            <span className="esc-text text-sm text-gray-600 font-medium">Esc</span>
-            <span className="close-icon w-5 h-5">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          {/* Platform Selector Pill */}
+          <div className="flex-shrink-0 relative flex items-center bg-[#f2f2f2] rounded-full p-1">
+            <div
+              className="absolute h-[calc(100%-8px)] bg-[#121212] rounded-full transition-all duration-300 ease-out"
+              style={getPlatformGliderStyle()}
+            />
+            {platforms.map((platform) => (
+              <button
+                key={platform}
+                type="button"
+                className={`relative z-10 px-4 py-1.5 rounded-full text-sm font-medium transition-colors duration-200 ${
+                  activePlatform === platform
+                    ? "text-white"
+                    : "text-[#585858] hover:text-[#121212]"
+                }`}
+                onClick={() => setActivePlatform(platform)}
+              >
+                {platform}
+              </button>
+            ))}
+          </div>
+
+          {/* Esc + Close */}
+          <div className="flex-shrink-0 flex items-center gap-2 ml-1">
+            <span className="text-sm text-[#cccccc] font-medium select-none">Esc</span>
+            <button
+              className="w-9 h-9 flex items-center justify-center rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors"
+              aria-label="Fechar busca"
+              onClick={onClose}
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path
-                  d="M5 5L15 15M5 15L15 5"
-                  stroke="currentColor"
-                  strokeWidth="2"
+                  d="M3 3L13 13M3 13L13 3"
+                  stroke="#585858"
+                  strokeWidth="1.5"
                   strokeLinecap="round"
                 />
               </svg>
-            </span>
-          </button>
+            </button>
+          </div>
         </div>
 
-        {/* Content Section */}
-        <div className="magic-search-content">
-          {/* Tab Section */}
-          <div className="tab-section mb-6">
-            <div className="tab-toggle relative flex items-center gap-4 border-b border-gray-200">
-              <div
-                className="glider absolute bottom-0 h-0.5 bg-black transition-all duration-300"
-                style={{ width: "19px", transform: "translateX(0px)" }}
-              />
-              <button
-                type="button"
-                className="tab-button relative pb-3 text-sm font-medium text-black"
-              >
-                All
-              </button>
-            </div>
+        {/* Tabs Section */}
+        <div className="px-6">
+          <div className="relative border-b border-[#f2f2f2]">
+            <button
+              type="button"
+              className="relative pb-3 text-sm font-medium text-[#121212]"
+            >
+              All
+              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#121212] rounded-full" />
+            </button>
           </div>
+        </div>
 
-          {/* Scrollable Content */}
-          <div className="scrollable-content max-h-[400px] overflow-y-auto">
-            {/* Empty State */}
-            <div className="empty-state-container flex items-center justify-center py-16">
-              <div className="empty-search-state text-center">
-                <div className="empty-search-icon mx-auto mb-6 w-20 h-20 flex items-center justify-center">
-                  <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                    <circle cx="35" cy="35" r="20" stroke="#D1D5DB" strokeWidth="3" />
-                    <path d="M50 50L65 65" stroke="#D1D5DB" strokeWidth="3" strokeLinecap="round" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Find design inspiration
-                </h3>
-                <p className="text-gray-600">
-                  Search for apps, flows, screens, UI elements or text in screens
-                </p>
-              </div>
+        {/* Content Area */}
+        <div className="min-h-[420px] max-h-[520px] overflow-y-auto flex items-center justify-center">
+          {/* Empty State */}
+          <div className="text-center px-6 py-16">
+            <div className="mx-auto mb-5 w-16 h-16 flex items-center justify-center">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <circle cx="24" cy="24" r="15" stroke="#cccccc" strokeWidth="2.5" />
+                <path d="M35 35L48 48" stroke="#cccccc" strokeWidth="2.5" strokeLinecap="round" />
+              </svg>
             </div>
+            <h3 className="text-xl font-semibold text-[#121212] mb-2">
+              Find design inspiration
+            </h3>
+            <p className="text-sm text-[#585858] leading-relaxed max-w-xs mx-auto">
+              Search for apps, flows, screens, UI elements or
+              <br />
+              text in screens
+            </p>
           </div>
         </div>
       </div>
