@@ -1,0 +1,357 @@
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Inter';
+  src: url("https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fAZ9hiA.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYAZ9hiA.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYAZ9hiA.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Funnel Display';
+  src: url("https://fonts.gstatic.com/s/funneldisplay/v3/B50bF7FGv37QNVWgE0ga--4PbZSRJXrOHcLHLoAYRGTnUc9xEZA.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Funnel Display';
+  src: url("https://fonts.gstatic.com/s/funneldisplay/v3/B50bF7FGv37QNVWgE0ga--4PbZSRJXrOHcLHLoAYRGTnX89x.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Funnel Sans';
+  src: url("https://fonts.gstatic.com/s/funnelsans/v3/OpNKno8Dg9bX6Bsp3Wq69Tp3ThTizn7c.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Funnel Sans';
+  src: url("https://fonts.gstatic.com/s/funnelsans/v3/OpNKno8Dg9bX6Bsp3Wq69Tp3Thrizg.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Funnel Sans';
+  src: url("https://fonts.gstatic.com/s/funnelsans/v3/OpNIno8Dg9bX6Bsp3Wq69Tp8fhj6yg.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Funnel Sans';
+  src: url("https://fonts.gstatic.com/s/funnelsans/v3/OpNIno8Dg9bX6Bsp3Wq69Tpyfhg.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: normal;
+}
+
+@tailwind base;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Web Platform Styles */
+.neo-filter-wrapper {
+  @apply bg-white rounded-2xl p-6 shadow-sm;
+}
+
+.hide-filter-btn {
+  @apply text-sm text-zinc-600 mb-4 px-3 py-2 rounded-lg hover:bg-zinc-100 transition-colors;
+}
+
+.filter-list {
+  @apply space-y-2;
+}
+
+.filter-list li {
+  @apply flex items-center justify-between px-3 py-2 rounded-lg cursor-pointer hover:bg-zinc-50 transition-colors;
+}
+
+.filter-name {
+  @apply text-sm text-zinc-700;
+}
+
+.filter-count {
+  @apply text-xs text-zinc-400 bg-zinc-100 px-2 py-1 rounded-full;
+}
+
+/* Web App Card Styles */
+.card-item-block {
+  @apply flex flex-col;
+}
+
+.card-container {
+  @apply relative bg-zinc-50 rounded-3xl overflow-hidden;
+}
+
+.card-header-container {
+  @apply absolute top-4 left-4 right-4 z-10;
+}
+
+.card-header {
+  @apply flex items-center justify-between;
+}
+
+.checkbox-wrapper {
+  @apply relative;
+}
+
+.app-checkbox {
+  @apply hidden;
+}
+
+.checkbox-label {
+  @apply block w-8 h-8 bg-white border-3 border-zinc-400 rounded-full cursor-pointer hover:border-zinc-600 transition-colors;
+}
+
+.carousel {
+  @apply relative w-full aspect-[16/9] bg-stone-50;
+}
+
+.carousel-container {
+  @apply relative w-full h-full;
+}
+
+.carousel-slide {
+  @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+}
+
+.carousel-slide.active {
+  @apply opacity-100;
+}
+
+.carousel-image {
+  @apply w-full h-full object-cover;
+}
+
+.card-link-dummy {
+  @apply absolute inset-0 z-20 cursor-pointer;
+}
+
+.card-dots {
+  @apply absolute bottom-4 left-0 right-0 flex items-center justify-center gap-2 z-30;
+}
+
+.dots-default {
+  @apply flex gap-1;
+}
+
+.dots-hover {
+  @apply hidden items-center gap-2;
+}
+
+.card-container:hover .dots-default {
+  @apply hidden;
+}
+
+.card-container:hover .dots-hover {
+  @apply flex;
+}
+
+.dots-hover-container {
+  @apply flex gap-1;
+}
+
+.dot {
+  @apply w-2 h-2 bg-zinc-300 rounded-full;
+}
+
+.dot.active {
+  @apply bg-zinc-700;
+}
+
+.dot.hexagon {
+  @apply rounded-none;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+}
+
+.nav-button {
+  @apply w-6 h-6 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.card-footer {
+  @apply block py-6 no-underline;
+}
+
+.app-info {
+  @apply flex items-center gap-3;
+}
+
+.app-info img {
+  @apply w-12 h-12 rounded-xl border border-gray-200 bg-white;
+}
+
+.app-details h2 {
+  @apply text-2xl font-semibold text-neutral-900 leading-tight overflow-hidden;
+}
+
+.app-details p {
+  @apply text-sm text-zinc-600 leading-tight overflow-hidden;
+}
+
+/* Web Cards Grid */
+.web-cards {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.web-cards.tab-active {
+  @apply block;
+}
+
+/* Filter Toggle Button */
+.filter-toggler {
+  @apply md:hidden w-8 h-8 bg-zinc-100 rounded-lg flex items-center justify-center;
+}
+
+.filter-toggler::before {
+  content: "⚙";
+  @apply text-lg;
+}
+
+/* Tab List Sort Wrap */
+.tab-list-sort-wrap {
+  @apply flex items-center gap-4 mb-6;
+}
+
+.explore-tabs {
+  @apply flex gap-2;
+}
+
+.tab-nav-button {
+  @apply px-4 py-2 rounded-lg text-base font-medium transition-colors flex items-center gap-2;
+}
+
+.tab-nav-button.active {
+  @apply bg-black text-white;
+}
+
+.tab-nav-button:not(.active) {
+  @apply text-zinc-600 hover:text-black;
+}
+
+.tab-count {
+  @apply text-xs px-2 py-1 rounded-full;
+}
+
+.tab-nav-button.active .tab-count {
+  @apply bg-white text-black;
+}
+
+.tab-nav-button:not(.active) .tab-count {
+  @apply bg-zinc-100 text-zinc-400;
+}
+
+/* Explore Sidebar */
+.explore-sidebar {
+  @apply hidden md:block w-64 shrink-0;
+}
+
+.explore-main {
+  @apply flex-1;
+}
+
+.explore-content {
+  @apply flex gap-6;
+}

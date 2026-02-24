@@ -1,0 +1,1 @@
+{"nodes":[{"id":"src/pages/AppDetails.tsx","label":"AppDetails","routes":["/apps/:appId"],"type":"screen"}],"edges":[]}
