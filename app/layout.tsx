@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+/* Seekfy - Next.js App Router */
 
 export const metadata: Metadata = {
   title: "Seekfy - Design Inspiration for Apps & Websites",
