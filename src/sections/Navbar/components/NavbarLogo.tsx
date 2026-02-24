@@ -1,15 +1,14 @@
 export const NavbarLogo = () => {
   return (
-    <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] min-w-9 order-2 mx-auto md:text-base md:leading-[22.4px] md:order-1 md:mx-0">
+    <div className="items-center flex min-w-9 order-2 mx-auto md:order-1 md:mx-0">
       <a
         href="/"
-        className="text-neutral-900 text-lg font-bold items-center box-border caret-transparent flex leading-[23.4px]"
+        className="flex items-center"
       >
-        <span className="text-xl font-bold tracking-tight">
-          <span className="text-black">app</span>
-          <span className="text-black">shots</span>
-          <span className="text-zinc-400">.design</span>
-        </span>
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="34" height="34" rx="17" fill="black"/>
+          <path d="M11.3462 7.83009C11.2685 7.51422 11.7235 7.25699 11.9543 7.4862C13.3499 8.87206 16.0057 11.2409 18.4246 11.8832C20.8074 12.516 24.2302 11.8108 26.1399 11.3072C26.4576 11.2235 26.7256 11.6861 26.4949 11.92C25.1068 13.3271 22.7889 15.9483 22.1479 18.3322C21.4984 20.7482 22.2183 24.2336 22.7155 26.1278C22.7979 26.4416 22.3506 26.7053 22.1161 26.481C20.6945 25.1212 17.9775 22.7806 15.5358 22.1497C13.1505 21.5334 9.71365 22.2092 7.84494 22.677C7.53085 22.7556 7.27497 22.3108 7.50078 22.0788C8.84321 20.6993 11.1512 18.0706 11.8125 15.7007C12.4906 13.2708 11.8182 9.74864 11.3462 7.83009Z" fill="white"/>
+        </svg>
       </a>
     </div>
   );
