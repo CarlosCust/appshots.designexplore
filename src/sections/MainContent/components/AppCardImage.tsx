@@ -4,7 +4,7 @@ export const AppCardImage = () => {
       <div className="relative text-[13px] box-border caret-transparent flex h-full leading-[18.2px] md:text-base md:leading-[22.4px]">
         <div className="absolute text-[13px] box-border caret-transparent shrink-0 h-full leading-[18.2px] w-full z-[2] left-0 top-0 md:text-base md:leading-[22.4px]">
           <img
-            src="https://storage.googleapis.com/appshots-design.appspot.com/watermarked/screens/ios/period_tracker/ios-screens%2Fios%2Fperiod_tracker%2Fios-IMG_5163.webp"
+            src="/images/screenshots/period-tracker-1.jpg"
             alt="Period Tracker screenshot 1"
             className="text-[13px] box-border caret-transparent h-full leading-[18.2px] max-w-full object-cover object-[50%_0%] w-full md:text-base md:leading-[22.4px]"
           />

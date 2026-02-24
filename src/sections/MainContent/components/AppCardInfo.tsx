@@ -7,7 +7,7 @@ export const AppCardInfo = () => {
     >
       <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/period_tracker/app-icon.webp?alt=media&token=308a4f59-d80d-4238-a909-150b04597e05"
+          src="/images/app-icons/period-tracker.jpg"
           alt="Period Tracker"
           className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
         />

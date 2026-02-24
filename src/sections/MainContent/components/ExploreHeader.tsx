@@ -33,7 +33,7 @@ export const ExploreHeader = () => {
                         <div className="relative text-[13px] box-border caret-transparent flex h-full leading-[18.2px] md:text-base md:leading-[22.4px]">
                           <div className="absolute text-[13px] box-border caret-transparent shrink-0 h-full leading-[18.2px] w-full z-[2] left-0 top-0 md:text-base md:leading-[22.4px]">
                             <img
-                              src="https://storage.googleapis.com/appshots-design.appspot.com/watermarked/screens/ios/period_tracker/ios-screens%2Fios%2Fperiod_tracker%2Fios-IMG_5163.webp"
+                              src="/images/screenshots/period-tracker-1.jpg"
                               alt="Period Tracker screenshot 1"
                               className="text-[13px] box-border caret-transparent h-full leading-[18.2px] max-w-full object-cover object-[50%_0%] w-full md:text-base md:leading-[22.4px]"
                             />
@@ -52,7 +52,7 @@ export const ExploreHeader = () => {
                     >
                       <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
                         <img
-                          src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/period_tracker/app-icon.webp?alt=media&token=308a4f59-d80d-4238-a909-150b04597e05"
+                          src="/images/app-icons/period-tracker.jpg"
                           alt="Period Tracker"
                           className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
                         />
@@ -87,7 +87,7 @@ export const ExploreHeader = () => {
                         <div className="relative text-[13px] box-border caret-transparent flex h-full leading-[18.2px] md:text-base md:leading-[22.4px]">
                           <div className="absolute text-[13px] box-border caret-transparent shrink-0 h-full leading-[18.2px] w-full z-[2] left-0 top-0 md:text-base md:leading-[22.4px]">
                             <img
-                              src="https://storage.googleapis.com/appshots-design.appspot.com/watermarked/screens/ios/wikipedia/ios-screens%2Fios%2Fwikipedia%2Fios-Wikipedia16.PNG"
+                              src="/images/screenshots/wikipedia-1.jpg"
                               alt="Wikipedia screenshot 1"
                               className="text-[13px] box-border caret-transparent h-full leading-[18.2px] max-w-full object-cover object-[50%_0%] w-full md:text-base md:leading-[22.4px]"
                             />
@@ -113,7 +113,7 @@ export const ExploreHeader = () => {
                     >
                       <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
                         <img
-                          src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/wikipedia/app-icon.jpg?alt=media&token=47dd010f-eb2c-444f-8f7e-477c1ddbcbf0"
+                          src="/images/app-icons/wikipedia.jpg"
                           alt="Wikipedia"
                           className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
                         />
@@ -148,7 +148,7 @@ export const ExploreHeader = () => {
                         <div className="relative text-[13px] box-border caret-transparent flex h-full leading-[18.2px] md:text-base md:leading-[22.4px]">
                           <div className="absolute text-[13px] box-border caret-transparent shrink-0 h-full leading-[18.2px] w-full z-[2] left-0 top-0 md:text-base md:leading-[22.4px]">
                             <img
-                              src="https://storage.googleapis.com/appshots-design.appspot.com/watermarked/screens/ios/duolingo_math/ios-screens%2Fios%2Fduolingo_math%2Fios-Duolingo%20Math1.PNG"
+                              src="/images/screenshots/duolingo-math-1.jpg"
                               alt="Duolingo Math screenshot 1"
                               className="text-[13px] box-border caret-transparent h-full leading-[18.2px] max-w-full object-cover object-[50%_0%] w-full md:text-base md:leading-[22.4px]"
                             />
@@ -167,7 +167,7 @@ export const ExploreHeader = () => {
                     >
                       <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
                         <img
-                          src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/duolingo_math/app-icon.jpg?alt=media&token=5f3a5ea1-4d02-4004-968d-ea9291869d4a"
+                          src="/images/app-icons/duolingo-math.jpg"
                           alt="Duolingo Math"
                           className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
                         />
@@ -202,7 +202,7 @@ export const ExploreHeader = () => {
                         <div className="relative text-[13px] box-border caret-transparent flex h-full leading-[18.2px] md:text-base md:leading-[22.4px]">
                           <div className="absolute text-[13px] box-border caret-transparent shrink-0 h-full leading-[18.2px] w-full z-[2] left-0 top-0 md:text-base md:leading-[22.4px]">
                             <img
-                              src="https://storage.googleapis.com/appshots-design.appspot.com/watermarked/screens/ios/onefootball/ios-screens%2Fios%2Fonefootball%2Fios-IMG_1466.PNG"
+                              src="/images/screenshots/onefootball-1.jpg"
                               alt="OneFootball screenshot 1"
                               className="text-[13px] box-border caret-transparent h-full leading-[18.2px] max-w-full object-cover object-[50%_0%] w-full md:text-base md:leading-[22.4px]"
                             />
@@ -221,7 +221,7 @@ export const ExploreHeader = () => {
                     >
                       <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
                         <img
-                          src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/onefootball/app-icon.jpg?alt=media&token=e1e9fbff-ae69-438b-b9e7-5eebbd5fa3e3"
+                          src="/images/app-icons/onefootball.jpg"
                           alt="OneFootball"
                           className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
                         />
@@ -256,7 +256,7 @@ export const ExploreHeader = () => {
                         <div className="relative text-[13px] box-border caret-transparent flex h-full leading-[18.2px] md:text-base md:leading-[22.4px]">
                           <div className="absolute text-[13px] box-border caret-transparent shrink-0 h-full leading-[18.2px] w-full z-[2] left-0 top-0 md:text-base md:leading-[22.4px]">
                             <img
-                              src="https://storage.googleapis.com/appshots-design.appspot.com/watermarked/screens/ios/uber_eats/ios-screens%2Fios%2Fuber_eats%2Fios-Uber_eats_37.webp"
+                              src="/images/screenshots/uber-eats-1.jpg"
                               alt="Uber Eats screenshot 1"
                               className="text-[13px] box-border caret-transparent h-full leading-[18.2px] max-w-full object-cover object-[50%_0%] w-full md:text-base md:leading-[22.4px]"
                             />
@@ -275,7 +275,7 @@ export const ExploreHeader = () => {
                     >
                       <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
                         <img
-                          src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/uber_eats/app-icon.webp?alt=media&token=05a87480-59f0-49da-bd6f-4ad23a7d2410"
+                          src="/images/app-icons/uber-eats.jpg"
                           alt="Uber Eats"
                           className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
                         />
@@ -310,7 +310,7 @@ export const ExploreHeader = () => {
                         <div className="relative text-[13px] box-border caret-transparent flex h-full leading-[18.2px] md:text-base md:leading-[22.4px]">
                           <div className="absolute text-[13px] box-border caret-transparent shrink-0 h-full leading-[18.2px] w-full z-[2] left-0 top-0 md:text-base md:leading-[22.4px]">
                             <img
-                              src="https://storage.googleapis.com/appshots-design.appspot.com/watermarked/screens/ios/quora/ios-screens%2Fios%2Fquora%2Fios-quora9.PNG"
+                              src="/images/screenshots/quora-1.jpg"
                               alt="Quora screenshot 1"
                               className="text-[13px] box-border caret-transparent h-full leading-[18.2px] max-w-full object-cover object-[50%_0%] w-full md:text-base md:leading-[22.4px]"
                             />
@@ -329,7 +329,7 @@ export const ExploreHeader = () => {
                     >
                       <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
                         <img
-                          src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/quora/app-icon.jpg?alt=media&token=12dbc974-d1ab-4fb6-92d1-84a51aa294c3"
+                          src="/images/app-icons/quora.jpg"
                           alt="Quora"
                           className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
                         />

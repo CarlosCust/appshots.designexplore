@@ -7,7 +7,7 @@ export const AppGrid = () => {
         <div className="text-[13px] box-border caret-transparent leading-[18.2px] md:text-base md:leading-[22.4px]">
           <div className="text-[13px] box-border caret-transparent gap-x-8 grid grid-cols-[repeat(1,minmax(0px,1fr))] leading-[18.2px] gap-y-8 w-full md:text-base md:grid-cols-[repeat(4,minmax(0px,1fr))] md:leading-[22.4px]">
             <AppCard
-              imageUrl="https://picsum.photos/seed/period-tracker/400/800"
+              imageUrl="/images/screenshots/period-tracker-1.jpg"
               imageAlt="Period Tracker screenshot 1"
               hasOuterWrapper={true}
               showDots={false}
@@ -16,7 +16,7 @@ export const AppGrid = () => {
             />
             <div className="text-[13px] box-border caret-transparent leading-[18.2px] overflow-hidden md:text-base md:leading-[22.4px]">
               <AppCard
-                imageUrl="https://picsum.photos/seed/wikipedia/400/800"
+                imageUrl="/images/screenshots/wikipedia-1.jpg"
                 imageAlt="Wikipedia screenshot 1"
                 showDots={true}
                 appId="wikipedia"
@@ -28,7 +28,7 @@ export const AppGrid = () => {
               >
                 <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
                   <img
-                    src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/wikipedia/app-icon.jpg?alt=media&token=47dd010f-eb2c-444f-8f7e-477c1ddbcbf0"
+                    src="/images/app-icons/wikipedia.jpg"
                     alt="Wikipedia"
                     className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
                   />
@@ -45,7 +45,7 @@ export const AppGrid = () => {
             </div>
             <div className="text-[13px] box-border caret-transparent leading-[18.2px] overflow-hidden md:text-base md:leading-[22.4px]">
               <AppCard
-                imageUrl="https://picsum.photos/seed/duolingo-math/400/800"
+                imageUrl="/images/screenshots/duolingo-math-1.jpg"
                 imageAlt="Duolingo Math screenshot 1"
                 labelClassName="opacity-100 md:opacity-0"
                 appId="duolingo-math"
@@ -57,7 +57,7 @@ export const AppGrid = () => {
               >
                 <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
                   <img
-                    src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/duolingo_math/app-icon.jpg?alt=media&token=5f3a5ea1-4d02-4004-968d-ea9291869d4a"
+                    src="/images/app-icons/duolingo-math.jpg"
                     alt="Duolingo Math"
                     className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
                   />
@@ -74,7 +74,7 @@ export const AppGrid = () => {
             </div>
             <div className="text-[13px] box-border caret-transparent leading-[18.2px] overflow-hidden md:text-base md:leading-[22.4px]">
               <AppCard
-                imageUrl="https://picsum.photos/seed/onefootball/400/800"
+                imageUrl="/images/screenshots/onefootball-1.jpg"
                 imageAlt="OneFootball screenshot 1"
                 appId="onefootball"
               />
@@ -85,7 +85,7 @@ export const AppGrid = () => {
               >
                 <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
                   <img
-                    src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/onefootball/app-icon.jpg?alt=media&token=e1e9fbff-ae69-438b-b9e7-5eebbd5fa3e3"
+                    src="/images/app-icons/onefootball.jpg"
                     alt="OneFootball"
                     className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
                   />
@@ -102,7 +102,7 @@ export const AppGrid = () => {
             </div>
             <div className="text-[13px] box-border caret-transparent leading-[18.2px] overflow-hidden md:text-base md:leading-[22.4px]">
               <AppCard
-                imageUrl="https://picsum.photos/seed/uber-eats/400/800"
+                imageUrl="/images/screenshots/uber-eats-1.jpg"
                 imageAlt="Uber Eats screenshot 1"
                 appId="uber-eats"
               />
@@ -113,7 +113,7 @@ export const AppGrid = () => {
               >
                 <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
                   <img
-                    src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/uber_eats/app-icon.webp?alt=media&token=05a87480-59f0-49da-bd6f-4ad23a7d2410"
+                    src="/images/app-icons/uber-eats.jpg"
                     alt="Uber Eats"
                     className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
                   />
@@ -130,7 +130,7 @@ export const AppGrid = () => {
             </div>
             <div className="text-[13px] box-border caret-transparent leading-[18.2px] overflow-hidden md:text-base md:leading-[22.4px]">
               <AppCard
-                imageUrl="https://picsum.photos/seed/quora/400/800"
+                imageUrl="/images/screenshots/quora-1.jpg"
                 imageAlt="Quora screenshot 1"
                 appId="quora"
               />
@@ -141,7 +141,7 @@ export const AppGrid = () => {
               >
                 <div className="text-[13px] items-center box-border caret-transparent flex leading-[18.2px] md:text-base md:leading-[22.4px]">
                   <img
-                    src="https://firebasestorage.googleapis.com/v0/b/appshots-design.appspot.com/o/appshots/quora/app-icon.jpg?alt=media&token=12dbc974-d1ab-4fb6-92d1-84a51aa294c3"
+                    src="/images/app-icons/quora.jpg"
                     alt="Quora"
                     className="text-[13px] bg-white box-border caret-transparent h-12 leading-[18.2px] max-w-full w-12 border border-gray-200 rounded-xl border-solid md:text-base md:leading-[22.4px]"
                   />

@@ -46,13 +46,12 @@ export const SearchModal = ({ isOpen, onClose }: SearchModalProps) => {
         <div className="magic-search-top flex items-start gap-4 mb-6">
           {/* Logo */}
           <div className="search-logo-container flex-shrink-0">
-            <img
-              src="https://c.animaapp.com/mm0uycwofWc9G5/assets/logo-icon.svg"
-              alt="logo"
-              width="32"
-              height="32"
-              className="w-8 h-8"
-            />
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="w-8 h-8">
+              <rect width="32" height="32" rx="8" fill="black"/>
+              <path d="M8 22V10l5 6 5-6v12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <circle cx="22" cy="14" r="4" stroke="white" strokeWidth="2"/>
+              <path d="M25 17l2 2" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
           </div>
 
           {/* Search Form */}

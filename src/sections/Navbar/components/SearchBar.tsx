@@ -15,11 +15,10 @@ export const SearchBar = () => {
             className="text-xs items-center bg-zinc-100 box-border caret-transparent gap-x-2 flex h-12 leading-[16.8px] min-h-0 min-w-0 gap-y-2 text-nowrap w-max px-4 py-2.5 rounded-xl md:text-sm md:leading-[19.6px] md:min-h-[auto] md:min-w-[auto] md:w-[315px] hover:bg-zinc-200 transition-colors cursor-pointer"
           >
             <div className="text-xs items-center box-border caret-transparent flex h-[22px] justify-center leading-[16.8px] min-h-0 min-w-0 text-nowrap w-[22px] md:text-sm md:leading-[19.6px] md:min-h-[auto] md:min-w-[auto]">
-              <img
-                src="https://c.animaapp.com/mm0uycwofWc9G5/assets/icon-1.svg"
-                alt="Icon"
-                className="text-xs box-border caret-transparent h-[23px] leading-[16.8px] text-nowrap w-[23px] md:text-sm md:leading-[19.6px]"
-              />
+              <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-zinc-500">
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
             </div>
             <div className="relative text-xs items-center box-border caret-transparent flex leading-[16.8px] min-h-0 min-w-0 text-nowrap w-full md:text-sm md:leading-[19.6px] md:min-h-[auto] md:min-w-[auto]">
               <span className="text-zinc-600 text-base box-border caret-transparent block leading-[22.4px] min-h-0 min-w-0 text-nowrap md:min-h-[auto] md:min-w-[auto]">
