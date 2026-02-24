@@ -9,14 +9,14 @@ export const PlatformSelector = () => {
         <div
           className="absolute text-[13px] bg-black box-border caret-transparent h-full leading-[18.2px] pointer-events-none text-nowrap z-0 rounded-[60px] top-0 transition-all duration-300 ease-in-out md:text-base md:leading-[22.4px]"
           style={{
-            width: activeTab === "apps" ? "60px" : "100px",
-            left: activeTab === "apps" ? "0px" : "63px",
+            width: activeTab === "apps" ? "50px" : "90px",
+            left: activeTab === "apps" ? "0px" : "53px",
           }}
         />
         <button
           type="button"
           title="Apps"
-          className={`relative text-sm bg-transparent caret-transparent leading-[15.4px] text-center text-nowrap z-[1] mr-[3px] px-[15px] py-[7px] rounded-[60px] transition-colors duration-200 ${
+          className={`relative text-sm bg-transparent caret-transparent leading-[15.4px] text-center text-nowrap z-[1] mr-[3px] px-[10px] py-[7px] rounded-[60px] transition-colors duration-200 ${
             activeTab === "apps" ? "text-white pointer-events-none" : "text-zinc-600 cursor-pointer hover:text-zinc-900"
           }`}
           onClick={() => setActiveTab("apps")}
@@ -26,7 +26,7 @@ export const PlatformSelector = () => {
         <button
           type="button"
           title="Resources"
-          className={`relative text-sm bg-transparent caret-transparent leading-[15.4px] text-center text-nowrap z-[1] px-[15px] py-[7px] rounded-[60px] transition-colors duration-200 ${
+          className={`relative text-sm bg-transparent caret-transparent leading-[15.4px] text-center text-nowrap z-[1] px-[10px] py-[7px] rounded-[60px] transition-colors duration-200 ${
             activeTab === "resources" ? "text-white pointer-events-none" : "text-zinc-600 cursor-pointer hover:text-zinc-900"
           }`}
           onClick={() => setActiveTab("resources")}
