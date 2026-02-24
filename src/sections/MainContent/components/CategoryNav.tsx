@@ -9,27 +9,21 @@ export const CategoryNav = () => {
       </button>
       <div className="relative text-[13px] box-border caret-transparent gap-x-4 flex leading-[18.2px] gap-y-4 text-nowrap md:text-base md:gap-x-6 md:leading-[22.4px] md:gap-y-6">
         <button className="relative text-black text-lg items-center bg-transparent caret-transparent flex leading-5 text-center text-nowrap px-0 py-[5px] md:text-xl md:leading-6 after:accent-auto after:bg-black after:box-border after:caret-transparent after:text-black after:block after:text-lg after:not-italic after:normal-nums after:font-medium after:h-0.5 after:tracking-[normal] after:leading-5 after:list-outside after:list-disc after:pointer-events-auto after:absolute after:text-center after:indent-[0px] after:normal-case after:text-nowrap after:origin-[0%_50%] after:visible after:w-full after:border-separate after:-bottom-0.5 after:font-indivisible after:md:text-xl after:md:leading-6">
-          Apps{" "}
+          Mobile{" "}
           <span className="text-white text-xs bg-black box-border caret-transparent block leading-3 text-nowrap ml-1.5 p-1.5 rounded-[50px]">
             617
           </span>
         </button>
         <button className="relative text-zinc-600 text-lg items-center bg-transparent caret-transparent flex leading-5 text-center text-nowrap px-0 py-[5px] md:text-xl md:leading-6 hover:text-black hover:border-black">
-          Screens{" "}
+          Web{" "}
           <span className="text-zinc-400 text-xs bg-zinc-50 box-border caret-transparent block leading-3 text-nowrap ml-1.5 p-1.5 rounded-[50px]">
-            116.231
+            1.342
           </span>
         </button>
         <button className="relative text-zinc-600 text-lg items-center bg-transparent caret-transparent flex leading-5 text-center text-nowrap px-0 py-[5px] md:text-xl md:leading-6 hover:text-black hover:border-black">
-          UI Elements{" "}
+          Marketing Pages{" "}
           <span className="text-zinc-400 text-xs bg-zinc-50 box-border caret-transparent block leading-3 text-nowrap ml-1.5 p-1.5 rounded-[50px]">
-            2.287
-          </span>
-        </button>
-        <button className="relative text-zinc-600 text-lg items-center bg-transparent caret-transparent flex leading-5 text-center text-nowrap px-0 py-[5px] md:text-xl md:leading-6 hover:text-black hover:border-black">
-          Flows{" "}
-          <span className="text-zinc-400 text-xs bg-zinc-50 box-border caret-transparent block leading-3 text-nowrap ml-1.5 p-1.5 rounded-[50px]">
-            5.897
+            856
           </span>
         </button>
       </div>
