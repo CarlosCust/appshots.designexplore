@@ -107,6 +107,4 @@
   }
 }
 
-.checkbox-label {
-  @apply block w-8 h-8 bg-white border-[3px] border-zinc-400 rounded-full cursor-pointer hover:border-zinc-600 transition-colors;
-}
+
